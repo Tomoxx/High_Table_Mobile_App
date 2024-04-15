@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:high_table_app/Widgets/contract.dart';
+import 'package:high_table_app/hotels.dart';
+import 'package:high_table_app/services.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -17,26 +20,40 @@ class ProfilePage extends StatelessWidget {
         'status': 'Active',
         'amount': 5000.0,
         'contractType': 'Open',
-        'target': 'Zachir',
+        'target': 'Labrvca',
       },
       {
         'status': 'Active',
         'amount': 7500.0,
-        'contractType': 'Assassination',
-        'target': 'High Table Target 1',
+        'contractType': 'Open',
+        'target': 'Jenni',
       },
       {
         'status': 'Active',
         'amount': 10000.0,
-        'contractType': 'Assassination',
-        'target': 'High Table Target 2',
+        'contractType': 'Open',
+        'target': 'Valetenavajeaxd',
       },
-      // Add more contract items as needed
     ];
 
     return Scaffold(
       appBar: AppBar(
         title: Text('Profile'),
+        actions: [IconButton(icon: Icon(MdiIcons.homeGroup),
+          onPressed:(){
+          MaterialPageRoute routeHotels = MaterialPageRoute(builder: (context) {
+          return Hotels();
+          });
+          //ejecutar la ruta
+          Navigator.push(context, routeHotels);
+          }),IconButton(icon: Icon(MdiIcons.shopping),
+          onPressed:(){
+          MaterialPageRoute routeServices = MaterialPageRoute(builder: (context) {
+          return Services();
+          });
+          //ejecutar la ruta
+          Navigator.push(context, routeServices);
+          })]
       ),
       body: ListView(
         children: [
