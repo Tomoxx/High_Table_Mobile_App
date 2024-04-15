@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:high_table_app/profile.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -50,18 +51,32 @@ class _LoginFormState extends State<LoginForm> {
             ),
           ),
           SizedBox(height: 20.0),
-          ElevatedButton(
-            onPressed: () {
-              // Aquí puedes agregar la lógica para autenticar al usuario
-              String username = _usernameController.text;
-              String password = _passwordController.text;
+            ElevatedButton(
+              onPressed: () {
+                // Aquí puedes agregar la lógica para autenticar al usuario
+                String username = _usernameController.text;
+                String password = _passwordController.text;
 
-              // Por ahora, simplemente imprimimos el nombre de usuario y la contraseña
-              print('Username: $username');
-              print('Password: $password');
-            },
-            child: Text('Login'),
-          ),
+                // Por ahora, simplemente imprimimos el nombre de usuario y la contraseña
+                print('Username: $username');
+                print('Password: $password');
+
+                print('Navegar a la otra página');
+                //crear ruta para navegar a la página
+                MaterialPageRoute routeProfile = MaterialPageRoute(builder: (context) {
+                  return ProfilePage();
+                });
+                //ejecutar la ruta
+                Navigator.push(context, routeProfile);
+              },
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all<Color>(Colors.black),
+                foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
+              ),
+              child: Text('Login',
+                style: TextStyle(fontFamily: 'Inder',),
+                ),
+            ),
         ],
       ),
     );
