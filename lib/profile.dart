@@ -32,7 +32,7 @@ class ProfilePage extends StatelessWidget {
         'status': 'Active',
         'amount': 10000.0,
         'contractType': 'Open',
-        'target': 'Valetenavajeaxd',
+        'target': 'José',
       },
     ];
 

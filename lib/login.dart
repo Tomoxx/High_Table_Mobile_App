@@ -57,7 +57,7 @@ class _LoginFormState extends State<LoginForm> {
                 String username = _usernameController.text;
                 String password = _passwordController.text;
 
-                // Por ahora, simplemente imprimimos el nombre de usuario y la contraseña
+                //imprimimos el nombre de usuario y la contraseña
                 print('Username: $username');
                 print('Password: $password');
 
