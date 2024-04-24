@@ -15,7 +15,9 @@ class Hotels extends StatelessWidget {
       length: 4,
       child: Scaffold(
         appBar: AppBar(
-          title: Text('Hotels'),
+          title: Text('Hotels',style: TextStyle(
+              color: Colors.white,)),
+          iconTheme: IconThemeData(color: Colors.white), 
           backgroundColor: Color.fromARGB(255, 27, 6, 122),
           bottom: TabBar(
             isScrollable: false,

@@ -16,6 +16,7 @@ class Services extends StatelessWidget {
         appBar: AppBar(
           title: Text('Services', style: TextStyle(
               color: Colors.white,)),
+          iconTheme: IconThemeData(color: Colors.white),
           backgroundColor: Color.fromARGB(255, 27, 6, 122),
           bottom: TabBar(
             isScrollable: false,
