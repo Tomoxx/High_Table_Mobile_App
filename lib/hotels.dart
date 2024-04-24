@@ -4,7 +4,6 @@ import 'package:high_table_app/tabs/hotels/tabNewYork.dart';
 import 'package:high_table_app/tabs/hotels/tabRome.dart';
 import 'package:high_table_app/tabs/hotels/tabCasablanca.dart';
 import 'package:high_table_app/tabs/hotels/tabOsaka.dart';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class Hotels extends StatelessWidget {
   const Hotels({super.key});
