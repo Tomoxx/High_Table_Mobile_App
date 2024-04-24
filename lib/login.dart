@@ -3,7 +3,7 @@ import 'package:high_table_app/profile.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
-  
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -34,6 +34,9 @@ class _LoginFormState extends State<LoginForm> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
+          // Image widget added here
+          Image(image: AssetImage('img/high table logo.png')),
+          SizedBox(height: 20.0),
           TextField(
             controller: _usernameController,
             decoration: InputDecoration(
@@ -51,32 +54,36 @@ class _LoginFormState extends State<LoginForm> {
             ),
           ),
           SizedBox(height: 20.0),
-            ElevatedButton(
-              onPressed: () {
-                // Aquí puedes agregar la lógica para autenticar al usuario
-                String username = _usernameController.text;
-                String password = _passwordController.text;
+          ElevatedButton(
+            onPressed: () {
+              // Aquí puedes agregar la lógica para autenticar al usuario
+              String username = _usernameController.text;
+              String password = _passwordController.text;
 
-                //imprimimos el nombre de usuario y la contraseña
-                print('Username: $username');
-                print('Password: $password');
+              //imprimimos el nombre de usuario y la contraseña
+              print('Username: $username');
+              print('Password: $password');
 
-                print('Navegar a la otra página');
-                //crear ruta para navegar a la página
-                MaterialPageRoute routeProfile = MaterialPageRoute(builder: (context) {
-                  return ProfilePage();
-                });
-                //ejecutar la ruta
-                Navigator.push(context, routeProfile);
-              },
-              style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all<Color>(Colors.black),
-                foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-              ),
-              child: Text('Login',
-                style: TextStyle(fontFamily: 'Inder',),
-                ),
+              print('Navegar a la otra página');
+              //crear ruta para navegar a la página
+              MaterialPageRoute routeProfile =
+                  MaterialPageRoute(builder: (context) {
+                return ProfilePage();
+              });
+              //ejecutar la ruta
+              Navigator.push(context, routeProfile);
+            },
+            style: ButtonStyle(
+              backgroundColor: MaterialStateProperty.all<Color>(Colors.black),
+              foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
             ),
+            child: Text(
+              'Login',
+              style: TextStyle(
+                fontFamily: 'Inder',
+              ),
+            ),
+          ),
         ],
       ),
     );
