@@ -46,6 +46,7 @@ class _LoginFormState extends State<LoginForm> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           // Image widget added here
+          SizedBox(height: 100),
           Image(image: AssetImage('assets/img/high table logo.png')),
           SizedBox(height: 20.0),
           TextField(
@@ -111,7 +112,7 @@ class _LoginFormState extends State<LoginForm> {
               ),
             ),
           ),
-          SizedBox(height: 160),
+          SizedBox(height: 300),
         ],
       ),
     );
