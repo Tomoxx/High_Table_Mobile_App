@@ -17,7 +17,7 @@ class LoginPage extends StatelessWidget {
               colors: [
                 Color.fromARGB(255, 78, 72, 13),
                 Color.fromARGB(255, 110, 110, 110)
-              ], // Example gradient colors
+              ],
             ),
           ),
           child: SingleChildScrollView(
@@ -45,7 +45,6 @@ class _LoginFormState extends State<LoginForm> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          // Image widget added here
           SizedBox(height: 100),
           Image(image: AssetImage('assets/img/high table logo.png')),
           SizedBox(height: 20.0),
@@ -93,12 +92,12 @@ class _LoginFormState extends State<LoginForm> {
               print('Password: $password');
 
               print('Navegar a la otra página');
-              //crear ruta para navegar a la página
+              //crear  para navegar a la página
               MaterialPageRoute routeProfile =
                   MaterialPageRoute(builder: (context) {
                 return ProfilePage();
               });
-              //ejecutar la ruta
+
               Navigator.push(context, routeProfile);
             },
             style: ButtonStyle(

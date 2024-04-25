@@ -18,7 +18,7 @@ class TabOsaka extends StatelessWidget {
             colors: [
               Color.fromARGB(255, 78, 72, 13),
               Color.fromARGB(255, 133, 13, 13)
-            ], // Example gradient colors
+            ],
           ),
         ),
         child: Container(
@@ -27,10 +27,10 @@ class TabOsaka extends StatelessWidget {
               Image(image: NetworkImage(hotelImage)),
               SizedBox(height: 10.0),
               Text(hotelDescription,
-                  textAlign: TextAlign.center, // Align text to center
+                  textAlign: TextAlign.center,
                   style: TextStyle(
-                    fontSize: 15, // Adjust font size
-                    color: Colors.white, // Change text color
+                    fontSize: 15,
+                    color: Colors.white,
                   ))
             ])),
       ),

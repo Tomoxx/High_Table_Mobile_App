@@ -18,7 +18,7 @@ class Services extends StatelessWidget {
             title: Text(
               'Services',
               style: TextStyle(color: Colors.white),
-              textAlign: TextAlign.center, // Alinea el texto al centro
+              textAlign: TextAlign.center,
             ),
             iconTheme: IconThemeData(color: Colors.white),
             backgroundColor: Color.fromARGB(255, 78, 72, 13),
@@ -33,28 +33,28 @@ class Services extends StatelessWidget {
                   icon: Icon(MdiIcons.pistol),
                   child: Text(
                     'Sommelier',
-                    textAlign: TextAlign.center, // Alinea el texto al centro
+                    textAlign: TextAlign.center,
                   ),
                 ),
                 Tab(
                   icon: Icon(MdiIcons.doctor),
                   child: Text(
                     'Doctor',
-                    textAlign: TextAlign.center, // Alinea el texto al centro
+                    textAlign: TextAlign.center,
                   ),
                 ),
                 Tab(
                   icon: Icon(MdiIcons.hanger),
                   child: Text(
                     'Tailor',
-                    textAlign: TextAlign.center, // Alinea el texto al centro
+                    textAlign: TextAlign.center,
                   ),
                 ),
                 Tab(
                   icon: Icon(MdiIcons.broom),
                   child: Text(
                     'Cleaners',
-                    textAlign: TextAlign.center, // Alinea el texto al centro
+                    textAlign: TextAlign.center,
                   ),
                 ),
               ],

@@ -25,7 +25,6 @@ class BottomNavBar extends StatelessWidget {
                         MaterialPageRoute(builder: (context) {
                       return ProfilePage();
                     });
-                    //ejecutar la ruta
                     Navigator.push(context, routeProfile);
                   }),
               IconButton(
@@ -38,7 +37,6 @@ class BottomNavBar extends StatelessWidget {
                         MaterialPageRoute(builder: (context) {
                       return Hotels();
                     });
-                    //ejecutar la ruta
                     Navigator.push(context, routeHotels);
                   }),
               IconButton(
@@ -51,7 +49,6 @@ class BottomNavBar extends StatelessWidget {
                         MaterialPageRoute(builder: (context) {
                       return Services();
                     });
-                    //ejecutar la ruta
                     Navigator.push(context, routeServices);
                   })
             ]),

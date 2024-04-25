@@ -49,7 +49,7 @@ class CompletedContractsPage extends StatelessWidget {
               colors: [
                 Color.fromARGB(255, 78, 72, 13),
                 Color.fromARGB(255, 110, 110, 110)
-              ], // Example gradient colors
+              ],
             ),
           ),
           child: ListView(
@@ -61,7 +61,6 @@ class CompletedContractsPage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      // Create Contract widgets dynamically for each contract item
                       for (var contract in contracts)
                         Contract(
                           amount: contract['amount'],

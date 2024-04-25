@@ -24,7 +24,7 @@ class ProfilePage extends StatelessWidget {
                     MaterialPageRoute(builder: (context) {
                   return LoginPage();
                 });
-                //ejecutar la ruta
+
                 Navigator.push(context, routeLogin);
               }),
           title: Text(
@@ -44,7 +44,7 @@ class ProfilePage extends StatelessWidget {
               colors: [
                 Color.fromARGB(255, 78, 72, 13),
                 Color.fromARGB(255, 110, 110, 110)
-              ], // Example gradient colors
+              ],
             ),
           ),
           child: ListView(
@@ -84,17 +84,15 @@ class ProfilePage extends StatelessWidget {
                         style: TextStyle(fontSize: 20.0, color: Colors.white),
                         textAlign: TextAlign.center,
                       ),
-                      // Add a Divider to separate user profile details from contract list
                       Divider(),
                       ElevatedButton(
                         onPressed: () {
                           print('Navegar a la otra página');
-                          //crear ruta para navegar a la página
                           MaterialPageRoute routeActiveContracts =
                               MaterialPageRoute(builder: (context) {
                             return ActiveContractsPage();
                           });
-                          //ejecutar la ruta
+
                           Navigator.push(context, routeActiveContracts);
                         },
                         style: ButtonStyle(
@@ -113,12 +111,11 @@ class ProfilePage extends StatelessWidget {
                       ElevatedButton(
                         onPressed: () {
                           print('Navegar a la otra página');
-                          //crear ruta para navegar a la página
                           MaterialPageRoute routeCompletedContracts =
                               MaterialPageRoute(builder: (context) {
                             return CompletedContractsPage();
                           });
-                          //ejecutar la ruta
+
                           Navigator.push(context, routeCompletedContracts);
                         },
                         style: ButtonStyle(
