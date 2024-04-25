@@ -25,7 +25,7 @@ class TabCleaners extends StatelessWidget {
             subtitle1: 'The best cleaner of his house.',
             countryAlpha2Code: 'CL',
             countryName: 'Chile',
-            description: 'adsadas',
+            description: """Villagol, a young computer science student, realized his talent for cleaning extended to digital spaces, offering services to the High Table. With a knack for keeping things tidy and organized, Villagol discovered his ability to cover digital tracks while studying cybersecurity. Recognizing the demand for discrete digital cleaning, he began offering his skills to the High Table, quickly becoming their go-to guy for erasing incriminating evidence and securing sensitive data. Now, Villagol operates as a digital cleaner for the High Table, navigating the virtual realm with the same precision as he does with a mop and broom.""",
           ),
         ],
       ),

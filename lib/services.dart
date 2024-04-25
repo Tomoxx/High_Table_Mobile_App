@@ -6,7 +6,7 @@ import 'package:high_table_app/tabs/services/tab_sommelier.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class Services extends StatelessWidget {
-  const Services({super.key});
+  const Services({Key? key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,10 +14,13 @@ class Services extends StatelessWidget {
       length: 4,
       child: Scaffold(
         appBar: AppBar(
-          title: Text('Services', style: TextStyle(
-              color: Colors.white,)),
+          title: Text(
+            'Services',
+            style: TextStyle(color: Colors.white),
+            textAlign: TextAlign.center, // Alinea el texto al centro
+          ),
           iconTheme: IconThemeData(color: Colors.white),
-          backgroundColor: Color.fromARGB(255, 27, 6, 122),
+          backgroundColor: Color.fromARGB(255, 78, 72, 13),
           bottom: TabBar(
             isScrollable: false,
             labelColor: Colors.white,
@@ -26,19 +29,31 @@ class Services extends StatelessWidget {
             tabs: [
               Tab(
                 icon: Icon(MdiIcons.pistol),
-                text: 'Sommelier',
+                child: Text(
+                  'Sommelier',
+                  textAlign: TextAlign.center, // Alinea el texto al centro
+                ),
               ),
               Tab(
                 icon: Icon(MdiIcons.doctor),
-                text: 'Doctor',
+                child: Text(
+                  'Doctor',
+                  textAlign: TextAlign.center, // Alinea el texto al centro
+                ),
               ),
               Tab(
                 icon: Icon(MdiIcons.hanger),
-                text: 'Tailor',
+                child: Text(
+                  'Tailor',
+                  textAlign: TextAlign.center, // Alinea el texto al centro
+                ),
               ),
               Tab(
                 icon: Icon(MdiIcons.broom),
-                text: 'Cleaners',
+                child: Text(
+                  'Cleaners',
+                  textAlign: TextAlign.center, // Alinea el texto al centro
+                ),
               ),
             ],
           ),
