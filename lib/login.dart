@@ -9,10 +9,19 @@ class LoginPage extends StatelessWidget {
     return MaterialApp(
       title: 'Login Page',
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('Login'),
+        body: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [
+                Color.fromARGB(255, 78, 72, 13),
+                Color.fromARGB(255, 110, 110, 110)
+              ], // Example gradient colors
+            ),
+          ),
+          child: LoginForm(),
         ),
-        body: LoginForm(),
       ),
     );
   }
@@ -41,7 +50,16 @@ class _LoginFormState extends State<LoginForm> {
             controller: _usernameController,
             decoration: InputDecoration(
               labelText: 'Username',
-              border: OutlineInputBorder(),
+              labelStyle: TextStyle(color: Colors.white),
+              border: OutlineInputBorder(
+                borderSide: BorderSide(color: Colors.white),
+              ),
+              enabledBorder: OutlineInputBorder(
+                borderSide: BorderSide(color: Colors.white),
+              ),
+              focusedBorder: OutlineInputBorder(
+                borderSide: BorderSide(color: Colors.white),
+              ),
             ),
           ),
           SizedBox(height: 20.0),
@@ -50,7 +68,16 @@ class _LoginFormState extends State<LoginForm> {
             obscureText: true,
             decoration: InputDecoration(
               labelText: 'Password',
-              border: OutlineInputBorder(),
+              labelStyle: TextStyle(color: Colors.white),
+              border: OutlineInputBorder(
+                borderSide: BorderSide(color: Colors.white),
+              ),
+              enabledBorder: OutlineInputBorder(
+                borderSide: BorderSide(color: Colors.white),
+              ),
+              focusedBorder: OutlineInputBorder(
+                borderSide: BorderSide(color: Colors.white),
+              ),
             ),
           ),
           SizedBox(height: 20.0),
