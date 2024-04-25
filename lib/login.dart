@@ -20,7 +20,9 @@ class LoginPage extends StatelessWidget {
               ], // Example gradient colors
             ),
           ),
-          child: LoginForm(),
+          child: SingleChildScrollView(
+            child: LoginForm(),
+          ),
         ),
       ),
     );
@@ -109,6 +111,7 @@ class _LoginFormState extends State<LoginForm> {
               ),
             ),
           ),
+          SizedBox(height: 160),
         ],
       ),
     );
