@@ -6,7 +6,7 @@ import 'package:high_table_app/tabs/services/tab_sommelier.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class Services extends StatelessWidget {
-  const Services({Key? key});
+  const Services({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,11 +14,8 @@ class Services extends StatelessWidget {
       length: 4,
       child: Scaffold(
         appBar: AppBar(
-          title: Text(
-            'Services',
-            style: TextStyle(color: Colors.white),
-            textAlign: TextAlign.center, // Alinea el texto al centro
-          ),
+          title: Text('Services', style: TextStyle(
+              color: Colors.white,)),
           iconTheme: IconThemeData(color: Colors.white),
           backgroundColor: Color.fromARGB(255, 78, 72, 13),
           bottom: TabBar(
@@ -29,31 +26,19 @@ class Services extends StatelessWidget {
             tabs: [
               Tab(
                 icon: Icon(MdiIcons.pistol),
-                child: Text(
-                  'Sommelier',
-                  textAlign: TextAlign.center, // Alinea el texto al centro
-                ),
+                text: 'Sommelier',
               ),
               Tab(
                 icon: Icon(MdiIcons.doctor),
-                child: Text(
-                  'Doctor',
-                  textAlign: TextAlign.center, // Alinea el texto al centro
-                ),
+                text: 'Doctor',
               ),
               Tab(
                 icon: Icon(MdiIcons.hanger),
-                child: Text(
-                  'Tailor',
-                  textAlign: TextAlign.center, // Alinea el texto al centro
-                ),
+                text: 'Tailor',
               ),
               Tab(
                 icon: Icon(MdiIcons.broom),
-                child: Text(
-                  'Cleaners',
-                  textAlign: TextAlign.center, // Alinea el texto al centro
-                ),
+                text: 'Cleaners',
               ),
             ],
           ),
