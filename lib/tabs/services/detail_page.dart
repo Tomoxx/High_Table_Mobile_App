@@ -105,7 +105,7 @@ class DetailPage extends StatelessWidget {
                         context: context,
                         builder: (BuildContext context) {
                           return AlertDialog(
-                            content: Image.asset('assets/call.gif'),
+                            content: Image.asset('assets/img/call.gif'),
                           );
                         },
                       );

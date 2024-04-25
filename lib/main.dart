@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'High Table',
       theme: ThemeData(
         // This is the theme of your application.
@@ -32,6 +33,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Inder',
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
+      
       ),
       home: const LoginPage(),
     );

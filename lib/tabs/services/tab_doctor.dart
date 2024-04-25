@@ -15,7 +15,7 @@ class TabDoctor extends StatelessWidget {
             title: 'Ani',
             subtitle1: 'Expert in everything.',
             countryAlpha2Code: 'cl',
-            countryName: 'Chile',
+            countryName: ' Chile',
             description: " Anibal was once a brilliant industrial engineer. But one day, he became entangled with the High Table, the organization that controls the underworld. Impressed by his skills, they recruited him. He rose to become a key strategist for the High Table, known as 'The Engineer'. But eventually, he felt trapped by violence and corruption. He decided to leave it all behind, returning to his another love, medicine, to find redemption. Despite his departure, Anibal remained a valued doctor for the organization, using his skills for more noble purposes, yet still bound to the High Table by ties that couldn't be easily severed.",
           ),
           buildCard(

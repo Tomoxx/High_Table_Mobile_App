@@ -24,7 +24,7 @@ class TabSommelier extends StatelessWidget {
               title: 'The Sommelier',
               subtitle1: 'A fine experience.',
               countryAlpha2Code: 'it',
-              countryName: 'Italy',
+              countryName: ' Italy',
               description:
                   """The Sommelier, expert weaponsmith, operates behind a wine shop facade.  Born into a family of renowned gunsmiths in Vienna, Austria, he pairs weapons with situations like a master sommelier matching wines. After studying across Europe, he emerged as a firearms expert, opening a wine shop front accessible only to select clients. His process of weapon selection is akin to wine pairing, carefully tailored to each client's needs, style, and situation."""),
         ],
