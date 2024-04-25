@@ -27,8 +27,7 @@ class TabTailor extends StatelessWidget {
             countryName: 'United Kingdom',
             description:
                 """After a grand career as a singer, Charli XCX now serves as a tailor for the High Table. Renowned for her creativity and attention to detail, Charli transitioned seamlessly from the stage to the world of haute couture. As a tailor, she crafts bespoke garments for the elite of the criminal underworld, ensuring they look as sharp as their knives. Charli's ability to blend style with functionality has made her an invaluable asset to the High Table, where every stitch serves a purpose in the intricate dance of power and influence.""",
-            countryName: ' United Kingdom',
-            description: """After a grand career as a singer, Charli XCX now serves as a tailor for the High Table. Renowned for her creativity and attention to detail, Charli transitioned seamlessly from the stage to the world of haute couture. As a tailor, she crafts bespoke garments for the elite of the criminal underworld, ensuring they look as sharp as their knives. Charli's ability to blend style with functionality has made her an invaluable asset to the High Table, where every stitch serves a purpose in the intricate dance of power and influence.""",
+        
           ),
         ],
       ),
