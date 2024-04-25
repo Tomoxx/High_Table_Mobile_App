@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:high_table_app/Widgets/bottom_nav_bar.dart';
 import 'package:high_table_app/Widgets/contract.dart';
-import 'package:high_table_app/profile.dart';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class ActiveContractsPage extends StatelessWidget {
   const ActiveContractsPage({Key? key}) : super(key: key);
@@ -18,7 +17,7 @@ class ActiveContractsPage extends StatelessWidget {
       },
       {
         'status': 'Active',
-        'amount': 7500.0,
+        'amount': 0.0,
         'contractType': 'Open',
         'target': 'Jenni',
         'backgroundImage': 'assets/high table logo.png',
@@ -32,18 +31,6 @@ class ActiveContractsPage extends StatelessWidget {
               color: Colors.white,
             ),
           ),
-          actions: [
-            IconButton(
-                icon: Icon(MdiIcons.homeAccount),
-                onPressed: () {
-                  MaterialPageRoute routeProfile =
-                      MaterialPageRoute(builder: (context) {
-                    return ProfilePage();
-                  });
-                  //ejecutar la ruta
-                  Navigator.push(context, routeProfile);
-                })
-          ],
           backgroundColor: Color.fromARGB(255, 78, 72, 13),
           iconTheme: IconThemeData(color: Colors.white),
         ),
@@ -81,6 +68,7 @@ class ActiveContractsPage extends StatelessWidget {
               ),
             ],
           ),
-        ));
+        ),
+        bottomNavigationBar: BottomNavBar());
   }
 }

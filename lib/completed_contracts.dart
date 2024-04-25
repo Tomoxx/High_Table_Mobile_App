@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:high_table_app/Widgets/bottom_nav_bar.dart';
 import 'package:high_table_app/Widgets/contract.dart';
-import 'package:high_table_app/profile.dart';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class CompletedContractsPage extends StatelessWidget {
   const CompletedContractsPage({Key? key}) : super(key: key);
@@ -39,18 +38,6 @@ class CompletedContractsPage extends StatelessWidget {
               color: Colors.white,
             ),
           ),
-          actions: [
-            IconButton(
-                icon: Icon(MdiIcons.homeAccount),
-                onPressed: () {
-                  MaterialPageRoute routeProfile =
-                      MaterialPageRoute(builder: (context) {
-                    return ProfilePage();
-                  });
-                  //ejecutar la ruta
-                  Navigator.push(context, routeProfile);
-                })
-          ],
           backgroundColor: Color.fromARGB(255, 78, 72, 13),
           iconTheme: IconThemeData(color: Colors.white),
         ),
@@ -88,6 +75,7 @@ class CompletedContractsPage extends StatelessWidget {
               ),
             ],
           ),
-        ));
+        ),
+        bottomNavigationBar: BottomNavBar());
   }
 }

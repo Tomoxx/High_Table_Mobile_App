@@ -83,11 +83,9 @@ class _LoginFormState extends State<LoginForm> {
           SizedBox(height: 20.0),
           ElevatedButton(
             onPressed: () {
-              // Aquí puedes agregar la lógica para autenticar al usuario
               String username = _usernameController.text;
               String password = _passwordController.text;
 
-              //imprimimos el nombre de usuario y la contraseña
               print('Username: $username');
               print('Password: $password');
 
