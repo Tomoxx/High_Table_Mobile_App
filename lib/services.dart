@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:high_table_app/tabs/services/tabCleaners.dart';
-import 'package:high_table_app/tabs/services/tabDoctor.dart';
-import 'package:high_table_app/tabs/services/tabSastre.dart';
-import 'package:high_table_app/tabs/services/tabSommelier.dart';
+import 'package:high_table_app/tabs/services/tab_cleaners.dart';
+import 'package:high_table_app/tabs/services/tab_doctor.dart';
+import 'package:high_table_app/tabs/services/tab_sastre.dart';
+import 'package:high_table_app/tabs/services/tab_sommelier.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class Services extends StatelessWidget {
