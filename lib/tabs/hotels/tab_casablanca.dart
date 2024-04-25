@@ -22,13 +22,14 @@ class TabCasablanca extends StatelessWidget {
           ),
         ),
         child: Container(
-            margin: EdgeInsets.all(5),
+            margin: EdgeInsets.all(10),
             child: Column(children: [
               Image(image: NetworkImage(hotelImage)),
+              SizedBox(height: 10.0),
               Text(hotelDescription,
                   textAlign: TextAlign.center, // Align text to center
                   style: TextStyle(
-                    fontSize: 16, // Adjust font size
+                    fontSize: 15, // Adjust font size
                     color: Colors.white, // Change text color
                   ))
             ])),

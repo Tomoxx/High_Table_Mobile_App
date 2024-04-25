@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:country_flags/country_flags.dart';
-import 'package:high_table_app/tabs/services/detalle_page.dart';
+import 'package:high_table_app/tabs/services/detail_page.dart';
 
 Widget buildCard({
   required BuildContext context,
@@ -16,7 +16,7 @@ Widget buildCard({
       Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) => DetallePage(
+          builder: (context) => DetailPage(
             backgroundImage: backgroundImage,
             title: title,
             subtitle: subtitle1,

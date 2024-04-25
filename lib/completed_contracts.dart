@@ -10,24 +10,24 @@ class CompletedContractsPage extends StatelessWidget {
     final List<Map<String, dynamic>> contracts = [
       {
         'status': 'Completed',
-        'amount': 5000.0,
+        'amount': 25000.0,
         'contractType': 'Open',
         'target': 'Renzo',
-        'backgroundImage': 'assets/high table logo.png',
+        'backgroundImage': 'assets/img/renzo.jpg',
       },
       {
         'status': 'Completed',
-        'amount': 7500.0,
+        'amount': 50000.0,
         'contractType': 'Open',
         'target': 'Mendoza',
-        'backgroundImage': 'assets/high table logo.png',
+        'backgroundImage': 'assets/img/mendoza.png',
       },
       {
         'status': 'Completed',
-        'amount': 10000.0,
+        'amount': 2000.0,
         'contractType': 'Open',
         'target': 'Marico',
-        'backgroundImage': 'assets/high table logo.png',
+        'backgroundImage': 'assets/img/marico.jpg',
       },
     ];
     return Scaffold(

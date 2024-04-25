@@ -9,12 +9,11 @@ class ProfilePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final String username = "John Wick";
-    final String city = "New York";
-    final int age = 45;
-    final int killCount = 300;
-    final String profileImageUrl =
-        "https://www.zbrushcentral.com/uploads/default/original/4X/3/6/a/36a97fe21f127f0422a011b445eb82151f3c7617.jpeg";
+    final String username = "Clandi";
+    final String city = "Puerto Montt";
+    final int age = 28;
+    final int killCount = 100;
+    final String profileImage = "assets/img/clandi.jpg";
 
     return Scaffold(
         appBar: AppBar(
@@ -59,7 +58,7 @@ class ProfilePage extends StatelessWidget {
                     children: [
                       CircleAvatar(
                         radius: 90,
-                        backgroundImage: NetworkImage(profileImageUrl),
+                        backgroundImage: AssetImage(profileImage),
                       ),
                       SizedBox(height: 20.0),
                       Text(

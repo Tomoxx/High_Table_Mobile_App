@@ -17,18 +17,19 @@ class TabNewYork extends StatelessWidget {
             end: Alignment.bottomCenter,
             colors: [
               Color.fromARGB(255, 78, 72, 13),
-              Color.fromARGB(255, 42, 13, 207)
+              Color.fromARGB(255, 28, 13, 114)
             ], // Example gradient colors
           ),
         ),
         child: Container(
-            margin: EdgeInsets.all(5),
+            margin: EdgeInsets.all(10),
             child: Column(children: [
               Image(image: NetworkImage(hotelImage)),
+              SizedBox(height: 10.0),
               Text(hotelDescription,
                   textAlign: TextAlign.center, // Align text to center
                   style: TextStyle(
-                    fontSize: 16, // Adjust font size
+                    fontSize: 15, // Adjust font size
                     color: Colors.white, // Change text color
                   ))
             ])),

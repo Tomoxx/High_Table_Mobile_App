@@ -3,7 +3,7 @@ import 'package:country_flags/country_flags.dart';
 import 'package:flutter/material.dart';
 import 'package:high_table_app/Widgets/bottom_nav_bar.dart';
 
-class DetallePage extends StatelessWidget {
+class DetailPage extends StatelessWidget {
   final String backgroundImage;
   final String title;
   final String subtitle;
@@ -11,7 +11,7 @@ class DetallePage extends StatelessWidget {
   final String countryAlpha2Code;
   final String countryName;
 
-  const DetallePage({
+  const DetailPage({
     required this.backgroundImage,
     required this.title,
     required this.subtitle,
