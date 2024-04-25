@@ -10,8 +10,8 @@ class TabCleaners extends StatelessWidget {
       body: ListView(
         children: [
           buildCard(
-            context: context, 
-            backgroundImage: 'assets/thecleaners.png',
+            context: context,
+            backgroundImage: 'assets/img/thecleaners.png',
             title: 'The Cleaners',
             subtitle1: 'Down for any occasion.',
             countryAlpha2Code: 'US',
@@ -19,8 +19,8 @@ class TabCleaners extends StatelessWidget {
             description: """The Cleaners, silent and efficient, are the unseen hands of the High Table. Trained in the art of erasure and elimination, they are the ones tasked with cleaning up the messes left behind by the underworld's elite. With surgical precision, The Cleaners sweep through crime scenes, removing any evidence that could lead back to their employers. Their work is meticulous and thorough, leaving no trace of their presence behind. The Cleaners operate in the shadows, their identities shrouded in mystery, but their reputation for getting the job done is unmatched. hether it's disposing of bodies, The Cleaners are the High Table's most trusted operatives, ensuring that their secrets remain hidden and their power unquestioned.""",
           ),
           buildCard(
-            context: context, 
-            backgroundImage: 'assets/villa.png',
+            context: context,
+            backgroundImage: 'assets/img/villa.png',
             title: 'Villagol',
             subtitle1: 'The best cleaner of his house.',
             countryAlpha2Code: 'CL',

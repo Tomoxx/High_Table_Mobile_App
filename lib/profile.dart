@@ -1,25 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:high_table_app/Widgets/bottom_nav_bar.dart';
 import 'package:high_table_app/active_Contracts.dart';
 import 'package:high_table_app/completed_contracts.dart';
-import 'package:high_table_app/hotels.dart';
 import 'package:high_table_app/login.dart';
-import 'package:high_table_app/services.dart';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final String username = "John Wick";
-    final String city = "New York";
-    final int age = 45;
-    final int killCount = 300;
-    final String profileImageUrl =
-        "https://www.zbrushcentral.com/uploads/default/original/4X/3/6/a/36a97fe21f127f0422a011b445eb82151f3c7617.jpeg";
+    final String username = "Clandi";
+    final String city = "Puerto Montt";
+    final int age = 28;
+    final int killCount = 100;
+    final String profileImage = "assets/img/clandi.jpg";
 
     return Scaffold(
-      appBar: AppBar(
+        appBar: AppBar(
           leading: IconButton(
               icon: Icon(Icons.logout),
               onPressed: () {
@@ -38,133 +35,112 @@ class ProfilePage extends StatelessWidget {
           ),
           backgroundColor: Color.fromARGB(255, 78, 72, 13),
           iconTheme: IconThemeData(color: Colors.white),
-          actions: [
-            IconButton(
-                icon: Icon(MdiIcons.homeGroup),
-                onPressed: () {
-                  MaterialPageRoute routeHotels =
-                      MaterialPageRoute(builder: (context) {
-                    return Hotels();
-                  });
-                  //ejecutar la ruta
-                  Navigator.push(context, routeHotels);
-                }),
-            IconButton(
-                icon: Icon(MdiIcons.shopping),
-                onPressed: () {
-                  MaterialPageRoute routeServices =
-                      MaterialPageRoute(builder: (context) {
-                    return Services();
-                  });
-                  //ejecutar la ruta
-                  Navigator.push(context, routeServices);
-                })
-          ]),
-      body: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [
-              Color.fromARGB(255, 78, 72, 13),
-              Color.fromARGB(255, 110, 110, 110)
-            ], // Example gradient colors
-          ),
         ),
-        child: ListView(
-          children: [
-            Center(
-              child: Padding(
-                padding: EdgeInsets.all(20.0),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    CircleAvatar(
-                      radius: 90,
-                      backgroundImage: NetworkImage(profileImageUrl),
-                    ),
-                    SizedBox(height: 20.0),
-                    Text(
-                      'Username: $username',
-                      style: TextStyle(fontSize: 20.0, color: Colors.white),
-                      textAlign: TextAlign.center,
-                    ),
-                    SizedBox(height: 10.0),
-                    Text(
-                      'City: $city',
-                      style: TextStyle(fontSize: 20.0, color: Colors.white),
-                      textAlign: TextAlign.center,
-                    ),
-                    SizedBox(height: 10.0),
-                    Text(
-                      'Age: $age',
-                      style: TextStyle(fontSize: 20.0, color: Colors.white),
-                      textAlign: TextAlign.center,
-                    ),
-                    SizedBox(height: 10.0),
-                    Text(
-                      'Kill Count: $killCount',
-                      style: TextStyle(fontSize: 20.0, color: Colors.white),
-                      textAlign: TextAlign.center,
-                    ),
-                    // Add a Divider to separate user profile details from contract list
-                    Divider(),
-                    ElevatedButton(
-                      onPressed: () {
-                        print('Navegar a la otra página');
-                        //crear ruta para navegar a la página
-                        MaterialPageRoute routeActiveContracts =
-                            MaterialPageRoute(builder: (context) {
-                          return ActiveContractsPage();
-                        });
-                        //ejecutar la ruta
-                        Navigator.push(context, routeActiveContracts);
-                      },
-                      style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.all<Color>(Colors.black),
-                        foregroundColor:
-                            MaterialStateProperty.all<Color>(Colors.white),
+        body: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [
+                Color.fromARGB(255, 78, 72, 13),
+                Color.fromARGB(255, 110, 110, 110)
+              ], // Example gradient colors
+            ),
+          ),
+          child: ListView(
+            children: [
+              Center(
+                child: Padding(
+                  padding: EdgeInsets.all(20.0),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      CircleAvatar(
+                        radius: 90,
+                        backgroundImage: AssetImage(profileImage),
                       ),
-                      child: Text(
-                        'Active Contracts',
-                        style: TextStyle(
-                          fontFamily: 'Inder',
+                      SizedBox(height: 20.0),
+                      Text(
+                        'Username: $username',
+                        style: TextStyle(fontSize: 20.0, color: Colors.white),
+                        textAlign: TextAlign.center,
+                      ),
+                      SizedBox(height: 10.0),
+                      Text(
+                        'City: $city',
+                        style: TextStyle(fontSize: 20.0, color: Colors.white),
+                        textAlign: TextAlign.center,
+                      ),
+                      SizedBox(height: 10.0),
+                      Text(
+                        'Age: $age',
+                        style: TextStyle(fontSize: 20.0, color: Colors.white),
+                        textAlign: TextAlign.center,
+                      ),
+                      SizedBox(height: 10.0),
+                      Text(
+                        'Kill Count: $killCount',
+                        style: TextStyle(fontSize: 20.0, color: Colors.white),
+                        textAlign: TextAlign.center,
+                      ),
+                      // Add a Divider to separate user profile details from contract list
+                      Divider(),
+                      ElevatedButton(
+                        onPressed: () {
+                          print('Navegar a la otra página');
+                          //crear ruta para navegar a la página
+                          MaterialPageRoute routeActiveContracts =
+                              MaterialPageRoute(builder: (context) {
+                            return ActiveContractsPage();
+                          });
+                          //ejecutar la ruta
+                          Navigator.push(context, routeActiveContracts);
+                        },
+                        style: ButtonStyle(
+                          backgroundColor:
+                              MaterialStateProperty.all<Color>(Colors.black),
+                          foregroundColor:
+                              MaterialStateProperty.all<Color>(Colors.white),
+                        ),
+                        child: Text(
+                          'Active Contracts',
+                          style: TextStyle(
+                            fontFamily: 'Inder',
+                          ),
                         ),
                       ),
-                    ),
-                    ElevatedButton(
-                      onPressed: () {
-                        print('Navegar a la otra página');
-                        //crear ruta para navegar a la página
-                        MaterialPageRoute routeCompletedContracts =
-                            MaterialPageRoute(builder: (context) {
-                          return CompletedContractsPage();
-                        });
-                        //ejecutar la ruta
-                        Navigator.push(context, routeCompletedContracts);
-                      },
-                      style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.all<Color>(Colors.black),
-                        foregroundColor:
-                            MaterialStateProperty.all<Color>(Colors.white),
-                      ),
-                      child: Text(
-                        'Completed Contracts',
-                        style: TextStyle(
-                          fontFamily: 'Inder',
+                      ElevatedButton(
+                        onPressed: () {
+                          print('Navegar a la otra página');
+                          //crear ruta para navegar a la página
+                          MaterialPageRoute routeCompletedContracts =
+                              MaterialPageRoute(builder: (context) {
+                            return CompletedContractsPage();
+                          });
+                          //ejecutar la ruta
+                          Navigator.push(context, routeCompletedContracts);
+                        },
+                        style: ButtonStyle(
+                          backgroundColor:
+                              MaterialStateProperty.all<Color>(Colors.black),
+                          foregroundColor:
+                              MaterialStateProperty.all<Color>(Colors.white),
+                        ),
+                        child: Text(
+                          'Completed Contracts',
+                          style: TextStyle(
+                            fontFamily: 'Inder',
+                          ),
                         ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
-      ),
-    );
+        bottomNavigationBar: BottomNavBar());
   }
 }

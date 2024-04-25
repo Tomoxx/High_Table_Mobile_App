@@ -20,7 +20,9 @@ class LoginPage extends StatelessWidget {
               ], // Example gradient colors
             ),
           ),
-          child: LoginForm(),
+          child: SingleChildScrollView(
+            child: LoginForm(),
+          ),
         ),
       ),
     );
@@ -44,7 +46,7 @@ class _LoginFormState extends State<LoginForm> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           // Image widget added here
-          Image(image: AssetImage('assets/high table logo.png')),
+          Image(image: AssetImage('assets/img/high table logo.png')),
           SizedBox(height: 20.0),
           TextField(
             controller: _usernameController,
@@ -83,11 +85,9 @@ class _LoginFormState extends State<LoginForm> {
           SizedBox(height: 20.0),
           ElevatedButton(
             onPressed: () {
-              // Aquí puedes agregar la lógica para autenticar al usuario
               String username = _usernameController.text;
               String password = _passwordController.text;
 
-              //imprimimos el nombre de usuario y la contraseña
               print('Username: $username');
               print('Password: $password');
 
@@ -111,6 +111,7 @@ class _LoginFormState extends State<LoginForm> {
               ),
             ),
           ),
+          SizedBox(height: 160),
         ],
       ),
     );

@@ -11,7 +11,7 @@ class TabDoctor extends StatelessWidget {
         children: [
           buildCard(
             context: context,
-            backgroundImage: 'assets/anibal.png',
+            backgroundImage: 'assets/img/anibal.png',
             title: 'Ani',
             subtitle1: 'Expert in everything.',
             countryAlpha2Code: 'cl',
@@ -20,7 +20,7 @@ class TabDoctor extends StatelessWidget {
           ),
           buildCard(
             context: context,
-            backgroundImage: 'assets/thedoctor.png',
+            backgroundImage: 'assets/img/thedoctor.png',
             title: 'The Doctor',
             subtitle1: 'Directly from Japan.',
             countryAlpha2Code: 'us',

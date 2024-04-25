@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:high_table_app/Widgets/bottom_nav_bar.dart';
 import 'package:high_table_app/Widgets/contract.dart';
-import 'package:high_table_app/profile.dart';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class ActiveContractsPage extends StatelessWidget {
   const ActiveContractsPage({Key? key}) : super(key: key);
@@ -11,17 +10,17 @@ class ActiveContractsPage extends StatelessWidget {
     final List<Map<String, dynamic>> contracts = [
       {
         'status': 'Active',
-        'amount': 5000.0,
+        'amount': 1000000.0,
         'contractType': 'Open',
         'target': 'Labrvca',
-        'backgroundImage': 'assets/high table logo.png',
+        'backgroundImage': 'assets/img/labrvca.jpg',
       },
       {
         'status': 'Active',
-        'amount': 7500.0,
-        'contractType': 'Open',
+        'amount': 100000.0,
+        'contractType': 'Closed',
         'target': 'Jenni',
-        'backgroundImage': 'assets/high table logo.png',
+        'backgroundImage': 'assets/img/jenni.jpg',
       },
     ];
     return Scaffold(
@@ -32,18 +31,6 @@ class ActiveContractsPage extends StatelessWidget {
               color: Colors.white,
             ),
           ),
-          actions: [
-            IconButton(
-                icon: Icon(MdiIcons.homeAccount),
-                onPressed: () {
-                  MaterialPageRoute routeProfile =
-                      MaterialPageRoute(builder: (context) {
-                    return ProfilePage();
-                  });
-                  //ejecutar la ruta
-                  Navigator.push(context, routeProfile);
-                })
-          ],
           backgroundColor: Color.fromARGB(255, 78, 72, 13),
           iconTheme: IconThemeData(color: Colors.white),
         ),
@@ -81,6 +68,7 @@ class ActiveContractsPage extends StatelessWidget {
               ),
             ],
           ),
-        ));
+        ),
+        bottomNavigationBar: BottomNavBar());
   }
 }

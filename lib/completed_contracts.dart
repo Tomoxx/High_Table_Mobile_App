@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:high_table_app/Widgets/bottom_nav_bar.dart';
 import 'package:high_table_app/Widgets/contract.dart';
-import 'package:high_table_app/profile.dart';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class CompletedContractsPage extends StatelessWidget {
   const CompletedContractsPage({Key? key}) : super(key: key);
@@ -11,24 +10,24 @@ class CompletedContractsPage extends StatelessWidget {
     final List<Map<String, dynamic>> contracts = [
       {
         'status': 'Completed',
-        'amount': 5000.0,
+        'amount': 25000.0,
         'contractType': 'Open',
         'target': 'Renzo',
-        'backgroundImage': 'assets/high table logo.png',
+        'backgroundImage': 'assets/img/renzo.jpg',
       },
       {
         'status': 'Completed',
-        'amount': 7500.0,
+        'amount': 50000.0,
         'contractType': 'Open',
         'target': 'Mendoza',
-        'backgroundImage': 'assets/high table logo.png',
+        'backgroundImage': 'assets/img/mendoza.png',
       },
       {
         'status': 'Completed',
-        'amount': 10000.0,
+        'amount': 2000.0,
         'contractType': 'Open',
         'target': 'Marico',
-        'backgroundImage': 'assets/high table logo.png',
+        'backgroundImage': 'assets/img/marico.jpg',
       },
     ];
     return Scaffold(
@@ -39,18 +38,6 @@ class CompletedContractsPage extends StatelessWidget {
               color: Colors.white,
             ),
           ),
-          actions: [
-            IconButton(
-                icon: Icon(MdiIcons.homeAccount),
-                onPressed: () {
-                  MaterialPageRoute routeProfile =
-                      MaterialPageRoute(builder: (context) {
-                    return ProfilePage();
-                  });
-                  //ejecutar la ruta
-                  Navigator.push(context, routeProfile);
-                })
-          ],
           backgroundColor: Color.fromARGB(255, 78, 72, 13),
           iconTheme: IconThemeData(color: Colors.white),
         ),
@@ -88,6 +75,7 @@ class CompletedContractsPage extends StatelessWidget {
               ),
             ],
           ),
-        ));
+        ),
+        bottomNavigationBar: BottomNavBar());
   }
 }
